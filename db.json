@@ -1,0 +1,21 @@
+{
+  "logins": [
+    {
+      "email": "1@1.com",
+      "password": "1"
+    },
+    {
+      "email": "2@2.com",
+      "password": "2"
+    },
+    {
+      "email": "3@3.com",
+      "password": "3"
+    },
+    {
+      "email": "5@5.com",
+      "password": "5",
+      "id": "5"
+    }
+  ]
+}

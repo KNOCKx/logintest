@@ -1,1 +1,160 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    font-family: "Helvetica Neue", sans-serif;
+}
+
+*,
+*:focus {
+    outline: none;
+}
+
+.links {
+    margin: 0 auto;
+    width: 300px;
+    & a {
+        color: #000;
+        text-decoration: none;
+        padding: 5px 10px;
+        background-color: #36a2c1;
+        margin-right: 20px;
+        border-radius: 5px;
+    }
+}
+
+.emicon::after,
+.passicon::after {
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+}
+
+.emicon::after {
+    background: url("./assets/img/mail.png");
+    top: 135px;
+    left: 86px;
+}
+
+.passicon::after {
+    background: url("./assets/img/lock.png");
+    background-repeat: no-repeat;
+    top: 218px;
+    left: 86px;
+}
+
+button {
+    width: 93px;
+    height: 40px;
+    background-color: #36a2c1;
+    font-size: 18px;
+    color: #fff;
+    margin-left: 72px;
+    border: none;
+    border-radius: 5px;
+}
+
+input {
+    width: 217px;
+    height: 40px;
+    border: 1px solid rgba(153, 153, 153, 0.28);
+    color: #666666;
+    font-size: 14px;
+    margin-left: 72px;
+    margin-bottom: 40px;
+    padding-left: 42px;
+    border-radius: 5px;
+}
+
+p {
+    font-size: 12px;
+    color: #666666;
+    & a {
+        color: #36a2c1;
+        text-decoration: none;
+    }
+}
+
+.invalid {
+    position: absolute;
+    top: 157px;
+    color: red;
+    opacity: 0;
+}
+
+.o1 {
+    opacity: 1;
+}
+
+.success {
+    border: 1px solid #048c48;
+}
+
+.successicon::after {
+    content: url("./assets/img/success.png");
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    transform: translate(353px, -74px);
+    display: block;
+}
+
+.error {
+    border: 1px solid red;
+}
+
+.dn {
+    display: none;
+}
+
+.db {
+    display: block;
+}
+
+.erroricon::after {
+    content: url("./assets/img/error.png");
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    transform: translate(353px, -74px);
+}
+
+div.wrapper {
+    position: relative;
+    margin: 0 auto;
+    width: 440px;
+    margin-top: 74px;
+    & h1 {
+        font-size: 41px;
+        font-weight: 700;
+        color: #2fa2c3;
+        margin-left: 72px;
+        margin-bottom: 33px;
+        margin-top: 0;
+        & span {
+            color: #666666;
+            font-size: 18px;
+            font-weight: 300;
+            margin-left: 6px;
+        }
+    }
+    & .login {
+        display: flex;
+        border: 1px solid rgba(153, 153, 153, 0.33);
+        border-radius: 5px;
+        flex-direction: column;
+        padding-top: 39px;
+        & p {
+            margin-left: 72px;
+        }
+        & p:last-child {
+            margin-bottom: 40px;
+        }
+    }
+    & .login.reg {
+        & p {
+            margin-top: 0;
+        }
+        & button {
+            margin-bottom: 17px;
+        }
+    }
+}

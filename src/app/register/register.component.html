@@ -1,0 +1,21 @@
+<div class="wrapper">
+    <h1>Bank<span>Support Portal</span></h1>
+    <div class="login reg">
+        <form (ngSubmit)="registerFunc()">
+
+            <input class="email inp" type="text" placeholder="E-mail" [(ngModel)]="registerFormVal.registerEmail" name="email" required>
+            <p class="invalid">
+                Invalid Username
+            </p>
+            <div class="emicon"></div>
+            <div class="successicondis1"></div>
+            <div class="erroricondis1"></div>
+            <input class="password inp" type="password" placeholder="Password" [(ngModel)]="registerFormVal.registerPassword" name="password" required>
+            <div class="passicon"></div>
+            <div class="successicondis2"></div>
+            <div class="erroricondis2"></div>
+            <input class="email inp" type="text" placeholder="id" [(ngModel)]="registerFormVal.registerId" name="id" required>
+            <button>Register</button>
+        </form>
+    </div>
+</div>
